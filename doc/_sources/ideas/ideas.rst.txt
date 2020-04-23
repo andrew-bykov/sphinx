@@ -1,0 +1,61 @@
+
+****************
+Программные идеи
+****************
+
+За время работы над многочисленными проектами сформировались некоторые идеи по организации программных разработок. В условиях массового перехода бизнеса в онлайн, принципы совместной работы программистов применимы и к другим отраслям.
+
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+
+    sphinx/sphinx
+    office/office
+    redmine/redmine
+    qnap/qnap
+
+Список идей
+===========
+
+.. container:: tocdescr
+
+    .. container:: descr
+
+        .. figure:: /_static/sphinx.png
+            :target: sphinx/sphinx
+
+        :doc:`sphinx/sphinx`
+            Ведение рабочей документации с помощью Sphinx-Doc.
+
+    .. container:: descr
+
+        .. figure:: /_static/office.png
+            :target: office/office
+
+        :doc:`office/office`
+            Органиация электронного офиса в формате рабочей докуменации.
+
+    .. container:: descr
+
+        .. figure:: /_static/redmine.png
+            :target: redmine/redmine
+
+        :doc:`redmine/redmine`
+            Ведение учета бизнес процессов в системе трекинга задач Redmine.
+
+    .. container:: descr
+
+        .. figure:: /_static/qnap.png
+            :target: qnap/qnap
+
+        :doc:`qnap/qnap`
+            Создание электронного офиса в собственном облаке на базе систем QNAP.
+
+Развитие идей
+=============
+
+.. figure:: /_static/idea.png
+    :align: center
+
+    Мне интересны данные идеи, готов работать над их развитием и внедрением.
+
