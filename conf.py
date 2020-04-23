@@ -85,7 +85,7 @@ todo_link_only = True
 # This then inserts a link to https://github.com/sphinx-doc/sphinx/issues/123. 
 # As you can see, the target given in the role is substituted in the base URL in the place of %s.
 
-# extlinks = {'issue': ('https://github.com/sphinx-doc/sphinx/issues/%s','issue ')}
+extlinks = {'n': ('https://github.com/andrew-bykov/sphinx/issues/%s','# ')}
 
 # -- Options for HTML output -------------------------------------------------
 
