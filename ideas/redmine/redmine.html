@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html  lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Бизнес-процессы в Redmine</title>
+    
+      <link rel="stylesheet" href="../../_static/pygments.css">
+      <link rel="stylesheet" href="../../_static/theme.css">
+      <link rel="stylesheet" href="../../_static/romnnn_sphinx_press_theme.css">
+          <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/translations.js"></script>
+
+      
+      <script src="../../_static/theme-vendors.js"></script>
+      <script src="../../_static/theme.js" defer></script>
+    
+  <link rel="index" title="Алфавитный указатель" href="../../genindex.html" />
+  <link rel="search" title="Поиск" href="../../search.html" />
+  <link rel="next" title="Redmine - пример управления персоналом предприятия" href="rm-hrm.html" />
+  <link rel="prev" title="Электронный проектный офис" href="../office/office.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <div class="home-link-container">
+      <router-link to="../../index.html" class="home-link">
+      
+        <img class="logo" src="../../_static/bykov.jpg" alt="logo"/>
+      
+        <span class="site-name">Быков Андрей Юрьевич</span>
+    </router-link>
+  </div>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="../../index.html#id2"
+         class="nav-link ">
+         Практика
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../index.html#id2"
+         class="nav-link ">
+         Контакты
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/romnnn/sphinx_press_theme"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="../../index.html#id2"
+         class="nav-link ">
+         Практика
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../index.html#id2"
+         class="nav-link ">
+         Контакты
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/romnnn/sphinx_press_theme"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Поиск</span>
+    <div class="searchformwrapper">
+      <form autocomplete="off" class="search" action="../../search.html" method="get">
+        <input type="text" name="q" autocomplete="off" />
+        <input type="submit" value="Искать" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../index.html#id2">Практика</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../project.html" class="reference internal ">Проектное управление</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../blend4web.html" class="reference internal ">3D веб-приложения</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../wantenger.html" class="reference internal ">Электронная коммерция</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../ipmce.html" class="reference internal ">Автоматика</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../protek.html" class="reference internal ">ERP</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../goldenpages.html" class="reference internal ">Справочники</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../index.html#id2">Контакты</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../contacts.html" class="reference internal ">Способы взаимодействия</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../ideas.html" class="reference internal ">Программные идеи</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../plan.html" class="reference internal ">Планирование в Sphinx</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+    
+      <li><a href="../ideas.html">Программные идеи</a> &raquo;</li>
+    
+    <li>Бизнес-процессы в Redmine</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="../office/office.html"
+       title="предыдущая глава">← Электронный проектный офис</a>
+  </li>
+  <li class="next">
+    <a href="rm-hrm.html"
+       title="следующая глава">Redmine - пример управления персоналом предприятия →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <div class="section" id="redmine">
+<span id="id1"></span><h1>Бизнес-процессы в Redmine<a class="headerlink" href="#redmine" title="Ссылка на этот заголовок">¶</a></h1>
+<p>С помощью <strong>систем отслеживания задач</strong> можно решать различные вопросы управления предприятием. Такие системы просты в применении по сравнению со специализированными программами. В них есть только два существенных понятия - список задач и список отчетов по затраченному времени. Все остальные компоненты, списки пользователей, проектов, ролей и маршрутов - вспомогательные и справочные. Нет необходимости тратить много времени для изучения и подготовки пользователей к многообразию учетных форм и журналов - в системах отслеживания задач журнал и форма задачи по сути одинаковые для всех применений.</p>
+<p>Практика работы в ИТ проектах с необходимостью управления организационным окружением (кадровые и юридические задачи, управление компьютерным парком) показала огромный потенциал трекинговых систем перед сложными во внедрении профильными системами автоматизации бизнес процессов.</p>
+<p>В современных трекинговых программах есть тесная интеграция с версионными системами хранения файлов и средствами коммуникаций для рабочих групп. Наиболее простой в использовании является свободно распространяемая программа Redmine с открытым исходным кодом. Интересным плюсом этой программы является поддержка вложенных проектов и различных связей между задачами для построения сетевых графиков.</p>
+<p>Как и в любой системе отслеживания задач, в программе Redmine есть поддержка <strong>маршрутов</strong> для задач. Матричная настройка цепочки <strong>статусов</strong> для разных пользовательских <strong>ролей</strong> в маршрутах Redmine позволяет быстро и гибко настраивать поддержку различных бизнес процессов управления предприятием. Также Redmine содержит большой набор инструментов и настроек для задач, пользователей, механизмов отслеживания, пользовательских полей для специфичных параметров и много другое.</p>
+<p>Рассмотрим наиболее часто встречающиеся бизнес задачи.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rm-hrm.html">Redmine - пример управления персоналом предприятия</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rm-hrm.html#id1">Подбор персонала</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rm-hrm.html#id2">Учет графика работы сотрудников</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rm-sd.html">Redmine - пример управления компьютерным парком офиса предприятия</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rm-sd.html#id1">Планирование закупок и ремонта компьютерного оборудования</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rm-sd.html#id2">Обеспечение непрерывной работы компьютеров сотрудников</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="../office/office.html"
+       title="предыдущая глава">← Электронный проектный офис</a>
+  </li>
+  <li class="next">
+    <a href="rm-hrm.html"
+       title="следующая глава">Redmine - пример управления персоналом предприятия →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2020, Быков Андрей Юрьевич.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4 with <a href="https://github.com/romnnn/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html  lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Redmine - пример управления компьютерным парком офиса предприятия</title>
+    
+      <link rel="stylesheet" href="../../_static/pygments.css">
+      <link rel="stylesheet" href="../../_static/theme.css">
+      <link rel="stylesheet" href="../../_static/romnnn_sphinx_press_theme.css">
+          <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/translations.js"></script>
+
+      
+      <script src="../../_static/theme-vendors.js"></script>
+      <script src="../../_static/theme.js" defer></script>
+    
+  <link rel="index" title="Алфавитный указатель" href="../../genindex.html" />
+  <link rel="search" title="Поиск" href="../../search.html" />
+  <link rel="next" title="Офисный сервер QNAP" href="../qnap/qnap.html" />
+  <link rel="prev" title="Redmine - пример управления персоналом предприятия" href="rm-hrm.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <div class="home-link-container">
+      <router-link to="../../index.html" class="home-link">
+      
+        <img class="logo" src="../../_static/bykov.jpg" alt="logo"/>
+      
+        <span class="site-name">Быков Андрей Юрьевич</span>
+    </router-link>
+  </div>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="../../index.html#id2"
+         class="nav-link ">
+         Практика
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../index.html#id2"
+         class="nav-link ">
+         Контакты
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/romnnn/sphinx_press_theme"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="../../index.html#id2"
+         class="nav-link ">
+         Практика
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../index.html#id2"
+         class="nav-link ">
+         Контакты
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/romnnn/sphinx_press_theme"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Поиск</span>
+    <div class="searchformwrapper">
+      <form autocomplete="off" class="search" action="../../search.html" method="get">
+        <input type="text" name="q" autocomplete="off" />
+        <input type="submit" value="Искать" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../index.html#id2">Практика</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../project.html" class="reference internal ">Проектное управление</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../blend4web.html" class="reference internal ">3D веб-приложения</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../wantenger.html" class="reference internal ">Электронная коммерция</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../ipmce.html" class="reference internal ">Автоматика</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../protek.html" class="reference internal ">ERP</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../goldenpages.html" class="reference internal ">Справочники</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../index.html#id2">Контакты</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../contacts.html" class="reference internal ">Способы взаимодействия</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../ideas.html" class="reference internal ">Программные идеи</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../plan.html" class="reference internal ">Планирование в Sphinx</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+    
+      <li><a href="../ideas.html">Программные идеи</a> &raquo;</li>
+    
+      <li><a href="redmine.html">Бизнес-процессы в Redmine</a> &raquo;</li>
+    
+    <li>Redmine - пример управления компьютерным парком офиса предприятия</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="rm-hrm.html"
+       title="предыдущая глава">← Redmine - пример управления персоналом предприятия</a>
+  </li>
+  <li class="next">
+    <a href="../qnap/qnap.html"
+       title="следующая глава">Офисный сервер QNAP →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <div class="section" id="redmine">
+<h1>Redmine - пример управления компьютерным парком офиса предприятия<a class="headerlink" href="#redmine" title="Ссылка на этот заголовок">¶</a></h1>
+<p>Попробуем решить с помощью системы отслеживания задач Redmine две задачи по управлению компьютерным парком среднего офиса.</p>
+<ol class="arabic simple">
+<li><p><strong>Планирование закупок и ремонта компьютерного оборудования</strong>. Процесс эксплуатации компьютерного парка включает в себя различные цепочки этапов планирования закупок и технологического обслуживания. Для каждого этапа есть ответственные сотрудники, которые Принимают решения по эксплуатации и проводят технологические работы. От отдела администрирования требуется отчет - сколько компьютерной техники запланировано приобрести в ближайшее время, какое количество работ по эксплуатации ведется в данный момент.</p></li>
+<li><p><strong>Обеспечение непрерывной работы компьютеров сотрудников</strong>. Требуется обеспечение бесперебойной работы сотрудников с компьютерной техникой, учет обращений сотрудников с техническими проблемами, сбор и контроль записок с потребностями сотрудников в компьютерах.</p></li>
+</ol>
+<div class="section" id="id1">
+<h2>Планирование закупок и ремонта компьютерного оборудования<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h2>
+<p><em>Сначала зададим виды компьютерного оборудования и различные эксплуатационные цепочки его закупки и обслуживания.</em></p>
+<p>Для этого нам необходим доступ уровня администратора, которым обладают пользователи с отметкой «является администратором» в меню «Администрирование &gt; Пользователи».</p>
+<div class="figure align-center" id="id3">
+<img alt="../../_images/sd-1-users.png" src="../../_images/sd-1-users.png" />
+<p class="caption"><span class="caption-text">Рис.1. Меню «Администрирование &gt; Пользователи»</span><a class="headerlink" href="#id3" title="Постоянная ссылка на рисунок">¶</a></p>
+</div>
+<p>Теперь нам доступно меню «Администрирование &gt; Трекеры». С помощью трекеров можно определить цепочки этапов и правила проведения эксплуатационных работ. Для каждого вида компьютерного оборудования добавим по новой записи в списке трекеров. Например, «Офисный компьютер», «Принтер» и «Расходный материал».</p>
+<div class="figure align-center" id="id4">
+<img alt="../../_images/sd-2-trackers.png" src="../../_images/sd-2-trackers.png" />
+<p class="caption"><span class="caption-text">Рис.2. Меню «Администрирование &gt; Трекеры»</span><a class="headerlink" href="#id4" title="Постоянная ссылка на рисунок">¶</a></p>
+</div>
+<p>В списке статусов в меню «Администрирование - Статусы задач» добавим все возможные этапы эксплуатации компьютерного парка - «Планирование», «Закупка», «Установка», «Эксплуатация», «Модернизация», «Обслуживание», «Списание», «Отказ», «Архив». В Redmine уже есть несколько заранее определенных статусов для задач - «Новая», «В работе», «Решена», «Обратная связь», «Закрыта», «Отклонена». Некоторым статусам можно присвоить признак «Задача закрыта», при достижении такого статуса задача помечается завершенной и выделяется зачеркнутым написанием. Отметим таким признаком последние три статуса для автоматического завершения задач по эксплуатации.</p>
+<div class="figure align-center" id="id5">
+<img alt="../../_images/sd-3-statuses.png" src="../../_images/sd-3-statuses.png" />
+<p class="caption"><span class="caption-text">Рис.3. Меню «Администрирование &gt; Статусы задач»</span><a class="headerlink" href="#id5" title="Постоянная ссылка на рисунок">¶</a></p>
+</div>
+<p>Заведенные статусы пока никак не привязаны к нашим трекерам. Для привязки нам необходимо в меню «Администрирование &gt; Последовательность действий» добавить матрицу возможных переходов от статуса к статусу для каждой пары «роль пользователя - трекер». Предварительно добавим необходимые роли в меню «Администрирование &gt; Роли и права доступа» - «Руководитель», «Системный администратор», «Офис менеджер», «Сотрудник». При настроенной матрице переходов каждый пользователь с назначенной соответствующей ролью в проекте сможет со «своего» статуса переключить задачу только на разрешенный ему набор соответствующих статусов.</p>
+<div class="figure align-center" id="id6">
+<img alt="../../_images/sd-4-roles.png" src="../../_images/sd-4-roles.png" />
+<p class="caption"><span class="caption-text">Рис.4. Меню «Администрирование &gt; Роли и права доступа»</span><a class="headerlink" href="#id6" title="Постоянная ссылка на рисунок">¶</a></p>
+</div>
+<div class="figure align-center" id="id7">
+<img alt="../../_images/sd-5-workflows.png" src="../../_images/sd-5-workflows.png" />
+<p class="caption"><span class="caption-text">Рис.5. Меню «Администрирование &gt; Последовательность действий»</span><a class="headerlink" href="#id7" title="Постоянная ссылка на рисунок">¶</a></p>
+</div>
+<p>Теперь у нас есть необходимые настройки для заведения в систему компьютерного парка.</p>
+<p><em>Попробуем завести несколько компьютеров и принтеров.</em></p>
+<p>Будем инвентарную запись для каждой единицы оборудования определять как задачу, а тип оборудования задавать через поле в задаче - трекер. Но сначала нам необходимо завести проект через меню «Администрирование &gt; Проекты». Назовем проект «Компьютерный парк».</p>
+<div class="figure align-center" id="id8">
+<img alt="../../_images/sd-6-projects.png" src="../../_images/sd-6-projects.png" />
+<p class="caption"><span class="caption-text">Рис.6. Меню «Проекты»</span><a class="headerlink" href="#id8" title="Постоянная ссылка на рисунок">¶</a></p>
+</div>
+<p>После заведения компьютеров и принтеров в списке задач мы получим инвентарную базу, через которую сможем понимать, сколько и какого типа компьютерного оборудования мы планируем купить, а также отслеживать процесс эксплуатации через смену статусов задач и назначенного на этап собеседования сотрудника. Для повышения эффективности работы с инвентарной базой в списке задач мы можем настраивать фильтры для различных состояний или видов оборудования.</p>
+<div class="figure align-center" id="id9">
+<img alt="../../_images/sd-7-issues.png" src="../../_images/sd-7-issues.png" />
+<p class="caption"><span class="caption-text">Рис.7. Меню «Проект - Компьютерный парк &gt; Задачи»</span><a class="headerlink" href="#id9" title="Постоянная ссылка на рисунок">¶</a></p>
+</div>
+<div class="figure align-center" id="id10">
+<img alt="../../_images/sd-8-issues-cv.png" src="../../_images/sd-8-issues-cv.png" />
+<p class="caption"><span class="caption-text">Рис.8. Меню «Проект - Компьютерный парк &gt; Оборудование»</span><a class="headerlink" href="#id10" title="Постоянная ссылка на рисунок">¶</a></p>
+</div>
+<p>Ответим на вопрос - сколько и какие компьютеры сейчас эксплуатируются и сколько принтеров предстоит купить.</p>
+<div class="figure align-center" id="id11">
+<img alt="../../_images/sd-9-issues-report.png" src="../../_images/sd-9-issues-report.png" />
+<p class="caption"><span class="caption-text">Рис.9. Меню «Проект - Компьютерный парк &gt; Отчет»</span><a class="headerlink" href="#id11" title="Постоянная ссылка на рисунок">¶</a></p>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>Обеспечение непрерывной работы компьютеров сотрудников<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Для приема заявок на обслуживание от сотрудников будем использовать уже существующий трекер «Ошибка» и добавим для него новые статусы. Также определим последовательность действий по заявкам сотрудников.</p>
+<div class="figure align-center" id="id12">
+<img alt="../../_images/sd-10-workflows.png" src="../../_images/sd-10-workflows.png" />
+<p class="caption"><span class="caption-text">Рис.10. Меню «Проект - Компьютерный парк &gt; Последовательность действий для заявок на обслуживание»</span><a class="headerlink" href="#id12" title="Постоянная ссылка на рисунок">¶</a></p>
+</div>
+<p>Теперь будем вести учет жалоб сотрудников в отделе системного администрирования с помощью связанных задач с указанием проблемы в наименовании задачи. Можно использовать и подчиненные задачи, но в таком случае родительская задача превратится в группу задач с расчетом начала и окончания от подчиненных подзадач. А нам хотелось бы использовать поля задачи «начало» и «окончание» для учета принятия оборудования в эксплуатацию и его списания.</p>
+<div class="figure align-center" id="id13">
+<img alt="../../_images/sd-11-issue-emp.png" src="../../_images/sd-11-issue-emp.png" />
+<p class="caption"><span class="caption-text">Рис.11. Меню «Проект - Компьютерный парк &gt; Карточка инцидента»</span><a class="headerlink" href="#id13" title="Постоянная ссылка на рисунок">¶</a></p>
+</div>
+<div class="figure align-center" id="id14">
+<img alt="../../_images/sd-12-issues-calendar.png" src="../../_images/sd-12-issues-calendar.png" />
+<p class="caption"><span class="caption-text">Рис.12. Меню «Проект - Компьютерный парк &gt; График обслуживания»</span><a class="headerlink" href="#id14" title="Постоянная ссылка на рисунок">¶</a></p>
+</div>
+<p>Аналогичным способом в программную конфигурацию Redmine можно добавлять учет по ремонту оборудования и прочим видам эксплуатационных работ.</p>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="rm-hrm.html"
+       title="предыдущая глава">← Redmine - пример управления персоналом предприятия</a>
+  </li>
+  <li class="next">
+    <a href="../qnap/qnap.html"
+       title="следующая глава">Офисный сервер QNAP →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2020, Быков Андрей Юрьевич.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4 with <a href="https://github.com/romnnn/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>

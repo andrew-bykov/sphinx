@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html  lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Офисный сервер QNAP</title>
+    
+      <link rel="stylesheet" href="../../_static/pygments.css">
+      <link rel="stylesheet" href="../../_static/theme.css">
+      <link rel="stylesheet" href="../../_static/romnnn_sphinx_press_theme.css">
+          <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/translations.js"></script>
+
+      
+      <script src="../../_static/theme-vendors.js"></script>
+      <script src="../../_static/theme.js" defer></script>
+    
+  <link rel="index" title="Алфавитный указатель" href="../../genindex.html" />
+  <link rel="search" title="Поиск" href="../../search.html" />
+  <link rel="next" title="Планирование в Sphinx" href="../../plan.html" />
+  <link rel="prev" title="Redmine - пример управления компьютерным парком офиса предприятия" href="../redmine/rm-sd.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <div class="home-link-container">
+      <router-link to="../../index.html" class="home-link">
+      
+        <img class="logo" src="../../_static/bykov.jpg" alt="logo"/>
+      
+        <span class="site-name">Быков Андрей Юрьевич</span>
+    </router-link>
+  </div>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="../../index.html#id2"
+         class="nav-link ">
+         Практика
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../index.html#id2"
+         class="nav-link ">
+         Контакты
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/romnnn/sphinx_press_theme"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="../../index.html#id2"
+         class="nav-link ">
+         Практика
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../index.html#id2"
+         class="nav-link ">
+         Контакты
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/romnnn/sphinx_press_theme"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Поиск</span>
+    <div class="searchformwrapper">
+      <form autocomplete="off" class="search" action="../../search.html" method="get">
+        <input type="text" name="q" autocomplete="off" />
+        <input type="submit" value="Искать" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../index.html#id2">Практика</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../project.html" class="reference internal ">Проектное управление</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../blend4web.html" class="reference internal ">3D веб-приложения</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../wantenger.html" class="reference internal ">Электронная коммерция</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../ipmce.html" class="reference internal ">Автоматика</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../protek.html" class="reference internal ">ERP</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../goldenpages.html" class="reference internal ">Справочники</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../index.html#id2">Контакты</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../contacts.html" class="reference internal ">Способы взаимодействия</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../ideas.html" class="reference internal ">Программные идеи</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../plan.html" class="reference internal ">Планирование в Sphinx</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+    
+      <li><a href="../ideas.html">Программные идеи</a> &raquo;</li>
+    
+    <li>Офисный сервер QNAP</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="../redmine/rm-sd.html"
+       title="предыдущая глава">← Redmine - пример управления компьютерным парком офиса предприятия</a>
+  </li>
+  <li class="next">
+    <a href="../../plan.html"
+       title="следующая глава">Планирование в Sphinx →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <div class="section" id="qnap">
+<h1>Офисный сервер QNAP<a class="headerlink" href="#qnap" title="Ссылка на этот заголовок">¶</a></h1>
+<div class="section" id="id1">
+<h2>Хранение файлов<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h2>
+</div>
+<div class="section" id="id2">
+<h2>Организация рабочей документации<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
+</div>
+<div class="section" id="mattermost">
+<h2>Мессенджер Mattermost<a class="headerlink" href="#mattermost" title="Ссылка на этот заголовок">¶</a></h2>
+</div>
+<div class="section" id="id3">
+<h2>Центр контактов<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
+</div>
+<div class="section" id="id4">
+<h2>Центр почтовых сообщений<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h2>
+</div>
+<div class="section" id="id5">
+<h2>Центр календарных событий<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h2>
+</div>
+<div class="section" id="redmine">
+<h2>Проектное управление Redmine<a class="headerlink" href="#redmine" title="Ссылка на этот заголовок">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="../redmine/rm-sd.html"
+       title="предыдущая глава">← Redmine - пример управления компьютерным парком офиса предприятия</a>
+  </li>
+  <li class="next">
+    <a href="../../plan.html"
+       title="следующая глава">Планирование в Sphinx →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2020, Быков Андрей Юрьевич.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4 with <a href="https://github.com/romnnn/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>
