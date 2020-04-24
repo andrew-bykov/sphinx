@@ -97,3 +97,73 @@
     border-color: #42b983;
 }
 /* End todo description */
+
+/* 
+.. container:: lead
+
+   .. clear
+*/
+.lead {
+    clear: both;
+    width: 100%;
+}
+
+/*
+.. admonition:: Reference
+   :class: refbox
+
+   :Mode:      All modes
+   :Menu:      :menuselection:`Marker --> Duplicate Marker`
+   :Hotkey:    :kbd:`LMB`
+               :kbd:`LMB`
+*/
+.rst-content .refbox .admonition-title {background-color: #bbb}
+.rst-content .refbox {
+	-webkit-font-smoothing: antialiased;
+	background-color: #e3e3e3;
+	line-height: 24px;
+	margin-bottom: 24px; padding: 12px;
+}
+/*
+.rst-content .seealso .admonition-title {background-color: #7a87e6}
+.rst-content .seealso {background-color: #e7ebfa}
+.rst-content .important .admonition-title {background-color: #ddca3b}
+.rst-content .important {background-color: #f6f3a5}
+*/
+
+/* refbox =, seealso ( > ), note ( i ), tip i , hint (+), warn / ! \ */
+.refbox .admonition-title::before {content:"\f00b\0020"}
+/*
+.seealso .admonition-title::before{content:"\f138"}
+.note .admonition-title::before{content:"\f05a"}
+.tip .admonition-title::before{content:"\f129"; width: 0.75em; text-align: center}
+.hint .admonition-title::before{content:"\f055"}
+.warning .admonition-title::before{content:"\f071"}
+*/
+
+/* 'refbox' field. 
+.refbox .field-list .field-name, .refbox .field-list .field-body {
+	padding: 0px;
+}
+.refbox .field-name {font-weight: normal}*/
+
+/* Ugly 'red' literals. 
+.rst-content tt.literal, .rst-content tt.literal, .rst-content code.literal {
+	color:#404040;
+}*/
+
+/* Literal blocks that use too much padding, make them look like regular literals. 
+.rst-content pre.literal-block {
+	font-size: 75%;
+	margin:0;
+	padding:2px 4px;
+	color:#404040;
+	background: #ffffff;
+	white-space: normal;
+	display: inline;
+}*/
+
+/* Without this, paragraphs in bullet points within definition lists have too much vertical padding. 
+.rst-content li > p {
+	margin-bottom: 0px !important;
+}*/
