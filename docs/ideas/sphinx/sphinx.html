@@ -311,26 +311,31 @@
 <div class="section" id="restucturedtext">
 <h2>Язык разметки reStucturedText<a class="headerlink" href="#restucturedtext" title="Ссылка на этот заголовок">¶</a></h2>
 <p>В тектовом редаторе с помощью простых правил разметки заголовков, стилей, таблиц и директив для изображений можно быстро создавать разделы документации и формировать на их основе веб-страницы с готовой структурой навигации.</p>
-<div class="figure align-center" id="id4">
+<div class="figure align-center" id="id6">
 <img alt="../../_images/ideas.gif" src="../../_images/ideas.gif" />
-<p class="caption"><span class="caption-text">Пример создания веб-страницы с помощью Sphinx.</span><a class="headerlink" href="#id4" title="Постоянная ссылка на рисунок">¶</a></p>
+<p class="caption"><span class="caption-text">Пример создания веб-страницы с помощью Sphinx.</span><a class="headerlink" href="#id6" title="Постоянная ссылка на рисунок">¶</a></p>
 </div>
 </div>
 <div class="section" id="id2">
 <h2>Совместная версионная работа<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
 <p>Текстовый формат документации Sphinx позволяет широко использовать версионные подходы для коллективной работы. Приведем пример, в котором документация размещена на сервере с системой Git (это может быть интернет сервер GitHub или сервер в локальной сети GitLab). Два пользователя организовали свои связанные с сервером рабочие копии. Каждый внес изменение, но пользователь с более поздним изменением может увидеть конфликтующие места и поправить текст документации.</p>
-<div class="figure align-center" id="id5">
+<div class="figure align-center" id="id7">
 <img alt="../../_images/git1.gif" src="../../_images/git1.gif" />
-<p class="caption"><span class="caption-text">Пример коллективной работы с документацией Sphinx.</span><a class="headerlink" href="#id5" title="Постоянная ссылка на рисунок">¶</a></p>
+<p class="caption"><span class="caption-text">Пример коллективной работы с документацией Sphinx.</span><a class="headerlink" href="#id7" title="Постоянная ссылка на рисунок">¶</a></p>
 </div>
 <p>После всех исправлений второй пользователь сформировал веб-сайт документации и выложил его на сервер Git.</p>
-<div class="figure align-center" id="id6">
+<div class="figure align-center" id="id8">
 <img alt="../../_images/git2.gif" src="../../_images/git2.gif" />
-<p class="caption"><span class="caption-text">Сборка веб-сайта документации Sphinx.</span><a class="headerlink" href="#id6" title="Постоянная ссылка на рисунок">¶</a></p>
+<p class="caption"><span class="caption-text">Сборка веб-сайта документации Sphinx.</span><a class="headerlink" href="#id8" title="Постоянная ссылка на рисунок">¶</a></p>
 </div>
-<div class="admonition-todo admonition" id="id3">
+</div>
+<div class="section" id="id3">
+<h2>Включение в документацию планов<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Благодаря директивам <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">todo::</span></code> и <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">todolist::</span></code> можно включать в документацию специальные блоки, похожие по стилю на блоки сообщений и предупреждений. Можно также добавлять внутрь плановых блоков конструкции <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">container::</span> <span class="pre">&lt;style-class&gt;</span></code>, где в поле &lt;style-class&gt; можно указать CSS класс в файле custom.css.</p>
+<p>Подробнее о работе плановых блоков и сборку планов можно прочитать в разделе <a class="reference internal" href="../../plan.html"><span class="doc">Планирование в Sphinx</span></a></p>
+<div class="admonition-todo admonition" id="id4">
 <p class="admonition-title">План</p>
-<p><strong>Раздел - Рабочая документация в Sphinx - Критично</strong></p>
+<p><strong>Раздел - Рабочая документация в Sphinx - Критично (класс todo-danger)</strong></p>
 <div class="todo-danger docutils container">
 <table class="docutils align-default">
 <colgroup>
@@ -357,7 +362,7 @@
 </tbody>
 </table>
 </div>
-<p><strong>Раздел - Рабочая документация в Sphinx - В ожидании</strong></p>
+<p><strong>Раздел - Рабочая документация в Sphinx - В ожидании (класс todo-warning)</strong></p>
 <div class="todo-warning docutils container">
 <table class="docutils align-default">
 <colgroup>
@@ -384,7 +389,7 @@
 </tbody>
 </table>
 </div>
-<p><strong>Раздел - Рабочая документация в Sphinx - Намечено</strong></p>
+<p><strong>Раздел - Рабочая документация в Sphinx - Намечено (класс todo-tip)</strong></p>
 <div class="todo-tip docutils container">
 <table class="docutils align-default">
 <colgroup>
@@ -412,6 +417,12 @@
 </table>
 </div>
 </div>
+</div>
+<div class="section" id="id5">
+<h2>Организация разработки<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Документация как процесс формализации удобно использовать на всех этапах разработки - при фиксации требований и технического задания, при разработке прототипа пользовательских интерфейсов с попутным формированием иерархии документов и описанием алгоримов работы программы.</p>
+<p>В процессе ориентированной на документацию разработки все участники команды на разных этапах смогут видеть полную картину разрабатываемого продукта.</p>
+<p>Ну и, конечно, при заверешении разработки сразу появится полная документация для всех групп пользователей.</p>
 </div>
 </div>
 
