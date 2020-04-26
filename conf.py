@@ -99,7 +99,7 @@ extlinks = {'gh': ('https://github.com/andrew-bykov/sphinx/issues/%s','# ')}
 #
 html_theme_options = {
   "external_links": [
-      ("Github", "https://github.com/romnnn/sphinx_press_theme")
+      ("Github", "https://andrew-bykov.github.io/sphinx/")
   ]
 }
 
