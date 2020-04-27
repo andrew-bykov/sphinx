@@ -129,37 +129,37 @@
       </p>
       <ul class="">
         
-          <li class="toctree-l1 "><a href="../../project.html" class="reference internal ">Проектное управление</a>
+          <li class="toctree-l1 "><a href="../../practice/project.html" class="reference internal ">Проектное управление</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="../../blend4web.html" class="reference internal ">3D веб-приложения</a>
+          <li class="toctree-l1 "><a href="../../practice/blend4web.html" class="reference internal ">3D веб-приложения</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="../../wantenger.html" class="reference internal ">Электронная коммерция</a>
+          <li class="toctree-l1 "><a href="../../practice/wantenger.html" class="reference internal ">Электронная коммерция</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="../../ipmce.html" class="reference internal ">Автоматика</a>
+          <li class="toctree-l1 "><a href="../../practice/ipmce.html" class="reference internal ">Автоматика</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="../../protek.html" class="reference internal ">ERP</a>
+          <li class="toctree-l1 "><a href="../../practice/protek.html" class="reference internal ">ERP</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="../../goldenpages.html" class="reference internal ">Справочники</a>
+          <li class="toctree-l1 "><a href="../../practice/goldenpages.html" class="reference internal ">Справочники</a>
 
             
           </li>
@@ -227,12 +227,28 @@
             
   <div class="section" id="id1">
 <h1>Электронный проектный офис<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h1>
+<p>Как в среде программной разработки, так и в бизнесе к проектам сегодня сложилось неоднозначное отношение. С одной стороны все понимают, что любую деятельность надо планировать. И для планирования наработаны подходы сетевых графиков работ, схем бизнес-процессов и целых бизнес-планов с финансово-инвестиционными параметрами.</p>
+<p>Но, «отплывая от берега», часто оказывается ситуация, которую хорошо описали в пословице «гадко было на бумаге, да забыли про овраги». Среди кучи проектных документов тяжело бывает найти нужную директиву, особенно если ее там нет, и появилась потребность в ней уже в процессе работы.</p>
+<p>Программисты научились бороться с недостаточностью постановочной информации с помощью трекинговых систем для ослеживания задач. Через обратную связь в электронных задачах программисты «сигналят» о проблемах. Но и там больше чем на недельный спринт видения картины движения по проекту нет.</p>
+<p>Сочетание подхода трекинговых систем и электронной документации может дать интересный результат. В начале проекта в документацию можно разместить исходные данные - технические задания, проектные документы, предполагаемые графики работ. А вот уже графики работ можно сзвязать с электронными задачами, в которых уже будет происходить взаимодействие участников проекта с попутным дополнением документации в части постановки задач, хода выполнения графиков работ.</p>
+<div class="section" id="github">
+<h2>GitHub сервер<a class="headerlink" href="#github" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Для ведения документации идеальным форматом является текстовый файл с разметкой заголовков, стилей, таблиц, сносок, ссылок. Популярной системой документирования с поддержкой размеченного текста сегодня является Sphinx (подробнее можно посмотреть в разделе <a class="reference internal" href="../sphinx/sphinx.html"><span class="doc">Рабочая документация в Sphinx</span></a>). Sphinx позволяет формировать автономный веб-сайт документации с автоматически сформированной навигацией и поиском без каких-либо серверов.</p>
+<p>Версионную коллективную работу с документами текстовых форматов удобно вести в Git серверах, как на собственном сервере через GitLab, так и на интернет хостинге GitHub или BitBucket. Разберем серевер GitHub (<a class="reference external" href="https://github.com">https://github.com</a>). Git позволяет всем участникам проекта в автоматизированном режиме делать версионные копии документации, вносить изменения и объединять их с изменениями других участников, сохраняя всю историю изменений.</p>
+</div>
 <div class="section" id="id2">
-<h2>1111<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
+<h2>Проекты и электронные задачи<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
 </div>
 <div class="section" id="id3">
-<h2>2222<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
-<div class="admonition-todo admonition" id="id4">
+<h2>Создание копии через ветвление<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
+</div>
+<div class="section" id="id4">
+<h2>Слияние копии с основной веткой<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h2>
+</div>
+<div class="section" id="id5">
+<h2>Ссылки на электронные задачи<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Чтобы добавить возможность указывать короткие ссылки на внешние адреса с номером задачи, нужно в файл <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> добавить директиву <code class="docutils literal notranslate"><span class="pre">extlinks</span> <span class="pre">=</span> <span class="pre">{'gh':</span> <span class="pre">('https://github.com/andrew-bykov/sphinx/issues/%s','#</span> <span class="pre">')}</span></code>. Тогда с помощью разметки <code class="docutils literal notranslate"><span class="pre">:gh:`1`</span></code> можно сгенерировать на сайте документации ссылку <code class="docutils literal notranslate"><span class="pre">https://github.com/andrew-bykov/sphinx/issues/1</span></code>.</p>
+<div class="admonition-todo admonition" id="id6">
 <p class="admonition-title">План</p>
 <p><strong>Раздел - Электронный проектный офис - Запланировано</strong></p>
 <div class="todo-plan docutils container">
@@ -301,6 +317,7 @@
 </table>
 </div>
 </div>
+<p>Подробнее о формате плановых блоков можно посмореть в разделе <a class="reference internal" href="../../plan.html"><span class="doc">Планирование в Sphinx</span></a>.</p>
 </div>
 </div>
 

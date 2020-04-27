@@ -25,12 +25,12 @@
    :hidden:
    :caption: Практика
 
-   project
-   blend4web
-   wantenger
-   ipmce
-   protek
-   goldenpages
+   practice/project
+   practice/blend4web
+   practice/wantenger
+   practice/ipmce
+   practice/protek
+   practice/goldenpages
 
 
 .. toctree::
