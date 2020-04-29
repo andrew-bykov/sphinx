@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html  lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>3D веб-приложения</title>
+    
+      <link rel="stylesheet" href="../../_static/pygments.css">
+      <link rel="stylesheet" href="../../_static/theme.css">
+      <link rel="stylesheet" href="../../_static/romnnn_sphinx_press_theme.css">
+          <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+          <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/translations.js"></script>
+
+      
+      <script src="../../_static/theme-vendors.js"></script>
+      <script src="../../_static/theme.js" defer></script>
+    
+  <link rel="index" title="Алфавитный указатель" href="../../genindex.html" />
+  <link rel="search" title="Поиск" href="../../search.html" />
+  <link rel="next" title="Электронная коммерция" href="../wantenger.html" />
+  <link rel="prev" title="Проектное управление" href="../project.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <div class="home-link-container">
+      <router-link to="../../index.html" class="home-link">
+      
+        <img class="logo" src="../../_static/bykov.jpg" alt="logo"/>
+      
+        <span class="site-name">Быков Андрей Юрьевич</span>
+    </router-link>
+  </div>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="../../index.html#id2"
+         class="nav-link  router-link-active">
+         Практика
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../index.html#id3"
+         class="nav-link ">
+         Программные идеи
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../index.html#id4"
+         class="nav-link ">
+         Контакты
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/andrew-bykov/sphinx"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="../../index.html#id2"
+         class="nav-link  router-link-active">
+         Практика
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../index.html#id3"
+         class="nav-link ">
+         Программные идеи
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../index.html#id4"
+         class="nav-link ">
+         Контакты
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/andrew-bykov/sphinx"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Поиск</span>
+    <div class="searchformwrapper">
+      <form autocomplete="off" class="search" action="../../search.html" method="get">
+        <input type="text" name="q" autocomplete="off" />
+        <input type="submit" value="Искать" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../index.html#id2">Практика</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 "><a href="../project.html" class="reference internal ">Проектное управление</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">3D веб-приложения</a>
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#blend4web" class="reference internal">Blend4Web</a></li>
+                
+                  <li class="toctree-l2"><a href="#blend4web-studio" class="reference internal">Blend4Web Studio</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../wantenger.html" class="reference internal ">Электронная коммерция</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../ipmce.html" class="reference internal ">Автоматика</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../protek.html" class="reference internal ">ERP</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../goldenpages.html" class="reference internal ">Справочники</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../index.html#id3">Программные идеи</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../ideas/sphinx/sphinx.html" class="reference internal ">Рабочая документация в Sphinx</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../ideas/office/office.html" class="reference internal ">Электронный проектный офис</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../ideas/redmine/redmine.html" class="reference internal ">Бизнес-процессы в Redmine</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../ideas/qnap/qnap.html" class="reference internal ">Офисный сервер QNAP</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../plan.html" class="reference internal ">Планирование в Sphinx</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../index.html#id4">Контакты</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../contacts.html" class="reference internal ">Способы взаимодействия</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+    
+    <li>3D веб-приложения</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="../project.html"
+       title="предыдущая глава">← Проектное управление</a>
+  </li>
+  <li class="next">
+    <a href="../wantenger.html"
+       title="следующая глава">Электронная коммерция →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <div class="section" id="d">
+<h1>3D веб-приложения<a class="headerlink" href="#d" title="Ссылка на этот заголовок">¶</a></h1>
+<p>В период работы в компнии ООО «Триумф» мною была сформирована команда для разработки трехмерных браузерных игр. В процессе развития команды вокруг идеи универсальной игровой WebGL сцены сформировалась группа программирования движка. В еще двух группах велись работы по дизайну трехмерных объектов и по программированию приложения для виртуальных  торговых помещений.</p>
+<p>В результате был разработан программный продукт Blend4Web (<a class="reference external" href="https://blend4web.com">https://blend4web.com</a>) и ряд приложений для конфигурирования товаров и навигации по торговым центрам.</p>
+<div class="section" id="blend4web">
+<h2>Blend4Web<a class="headerlink" href="#blend4web" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Blend4Web - это программная среда для подготовки и интерактивного отображения трехмерного аудиовизуального контента в браузерах, т.е. трехмерный «движок» (жаргонизм от англ. «engine»).</p>
+<p>Платформа предназначена для создания визуализаций, презентаций, интернет-магазинов, игр и других “насыщенных” web-приложений.</p>
+<p>Фреймворк Blend4Web имеет тесную интеграцию с пакетом 3D моделирования и анимации Blender (отсюда название). Отображение контента осуществляется средствами WebGL и других браузерных технологий без использования плагинов.</p>
+<p>Технически Blend4Web представляет собой программную библиотеку, подключаемую к веб-странице, аддон (дополнение) к программе Blender, а также инструменты для отладки и оптимизации.</p>
+<p>Первый релиз движка состоялся 28 марта 2014 г.</p>
+<div class="figure align-center" id="id1">
+<img alt="../../_images/blend4web.png" src="../../_images/blend4web.png" />
+<p class="caption"><span class="caption-text">Линейка продуктов Blend4Web</span><a class="headerlink" href="#id1" title="Постоянная ссылка на рисунок">¶</a></p>
+</div>
+<div class="tocdescr docutils container">
+<div class="descr docutils container">
+<div class="figure align-default">
+<img alt="../../_images/b4w1.png" src="../../_images/b4w1.png" />
+</div>
+</div>
+<div class="descr docutils container">
+<div class="figure align-default">
+<img alt="../../_images/b4w2.png" src="../../_images/b4w2.png" />
+</div>
+</div>
+<div class="descr docutils container">
+<div class="figure align-default">
+<img alt="../../_images/b4w3.png" src="../../_images/b4w3.png" />
+</div>
+</div>
+<div class="descr docutils container">
+<div class="figure align-default">
+<img alt="../../_images/b4w4.png" src="../../_images/b4w4.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="blend4web-studio">
+<h2>Blend4Web Studio<a class="headerlink" href="#blend4web-studio" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="figure align-center" id="id2">
+<img alt="../../_images/studio.png" src="../../_images/studio.png" />
+<p class="caption"><span class="caption-text">Блог разработки Blend4Web Studio</span><a class="headerlink" href="#id2" title="Постоянная ссылка на рисунок">¶</a></p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="../project.html"
+       title="предыдущая глава">← Проектное управление</a>
+  </li>
+  <li class="next">
+    <a href="../wantenger.html"
+       title="следующая глава">Электронная коммерция →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2020, Быков Андрей Юрьевич.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4 with <a href="https://github.com/romnnn/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>
