@@ -42,6 +42,8 @@ extensions = [
     'sphinx.ext.extlinks',
     'sphinx.ext.graphviz'
 ]
+# Publish HTML docs in GitHub Pages
+# html_baseurl = 'www.andrew-bykov.com'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
