@@ -33,15 +33,74 @@
    practice/goldenpages
 
 
+Программные идеи
+================
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Программные идеи
+
+   ideas/sphinx/sphinx
+   ideas/office/office
+   ideas/redmine/redmine
+   ideas/qnap/qnap
+   plan
+
+За время работы над многочисленными проектами сформировались некоторые идеи по организации программных разработок. В условиях массового перехода бизнеса в онлайн, принципы совместной работы программистов применимы и к другим отраслям.
+
+Главный смысл рассматриваемых сценариев использования программ - максимальная независимость от сложной серверной инфраструктуры, навязываемых хостингом процедур дорогого администрирования.
+
+Многие задачи программной разработки, бизнес-процессов, электронного взаимодействия сегодня можно решать проще, а также надежно хранить свои данные.
+
+.. container:: tocdescr
+
+    .. container:: descr
+
+        .. figure:: /_static/sphinx.png
+            :target: ideas/sphinx/sphinx
+
+        :doc:`ideas/sphinx/sphinx`
+            Ведение рабочей документации с помощью Sphinx-Doc.
+
+    .. container:: descr
+
+        .. figure:: /_static/office.png
+            :target: ideas/office/office
+
+        :doc:`ideas/office/office`
+            Органиация электронного офиса в формате рабочей докуменации.
+
+    .. container:: descr
+
+        .. figure:: /_static/redmine.png
+            :target: ideas/redmine/redmine
+
+        :doc:`ideas/redmine/redmine`
+            Ведение учета бизнес процессов в системе трекинга задач Redmine.
+
+    .. container:: descr
+
+        .. figure:: /_static/qnap.png
+            :target: ideas/qnap/qnap
+
+        :doc:`ideas/qnap/qnap`
+            Создание электронного офиса в собственном облаке на базе систем QNAP.
+
+Развитие идей
+=============
+
+.. figure:: /_static/idea.png
+    :align: center
+
+    Мне интересны данные идеи, готов работать над их развитием и внедрением.
+
 .. toctree::
    :maxdepth: 2
    :hidden:
    :caption: Контакты
 
    contacts
-   ideas/ideas
-   plan
-
 
 .. Indices and tables
    ==================

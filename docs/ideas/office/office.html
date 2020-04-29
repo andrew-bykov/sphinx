@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="../../_static/pygments.css">
       <link rel="stylesheet" href="../../_static/theme.css">
       <link rel="stylesheet" href="../../_static/romnnn_sphinx_press_theme.css">
+          <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
           <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
       
       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
@@ -52,7 +53,14 @@
     </div>
   
     <div class="nav-item">
-      <a href="../../index.html#id2"
+      <a href="../../index.html#id4"
+         class="nav-link  router-link-active">
+         Программные идеи
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../index.html#id5"
          class="nav-link ">
          Контакты
       </a>
@@ -91,7 +99,14 @@
     </div>
   
     <div class="nav-item">
-      <a href="../../index.html#id2"
+      <a href="../../index.html#id4"
+         class="nav-link  router-link-active">
+         Программные идеи
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../index.html#id5"
          class="nav-link ">
          Контакты
       </a>
@@ -170,23 +185,66 @@
   
     <div class="sidebar-group">
       <p class="caption">
-        <span class="caption-text"><a href="../../index.html#id2">Контакты</a></span>
+        <span class="caption-text"><a href="../../index.html#id4">Программные идеи</a></span>
       </p>
-      <ul class="">
+      <ul class="current">
         
-          <li class="toctree-l1 "><a href="../../contacts.html" class="reference internal ">Способы взаимодействия</a>
+          <li class="toctree-l1 "><a href="../sphinx/sphinx.html" class="reference internal ">Рабочая документация в Sphinx</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="../ideas.html" class="reference internal ">Программные идеи</a>
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Электронный проектный офис</a>
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#github" class="reference internal">GitHub сервер</a></li>
+                
+                  <li class="toctree-l2"><a href="#id2" class="reference internal">Проекты и электронные задачи</a></li>
+                
+                  <li class="toctree-l2"><a href="#id3" class="reference internal">Создание копии через ветвление</a></li>
+                
+                  <li class="toctree-l2"><a href="#id4" class="reference internal">Слияние копии с основной веткой</a></li>
+                
+                  <li class="toctree-l2"><a href="#id5" class="reference internal">Ссылки на электронные задачи</a></li>
+                
+                  <li class="toctree-l2"><a href="#id7" class="reference internal">Организация офиса</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../redmine/redmine.html" class="reference internal ">Бизнес-процессы в Redmine</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../qnap/qnap.html" class="reference internal ">Офисный сервер QNAP</a>
 
             
           </li>
 
         
           <li class="toctree-l1 "><a href="../../plan.html" class="reference internal ">Планирование в Sphinx</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../index.html#id5">Контакты</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../contacts.html" class="reference internal ">Способы взаимодействия</a>
 
             
           </li>
@@ -203,8 +261,6 @@
   
   <ul class="breadcrumbs">
     <li><a href="../../index.html">Docs</a> &raquo;</li>
-    
-      <li><a href="../ideas.html">Программные идеи</a> &raquo;</li>
     
     <li>Электронный проектный офис</li>
   </ul>
@@ -238,17 +294,42 @@
 </div>
 <div class="section" id="id2">
 <h2>Проекты и электронные задачи<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Основным проектом в GitHub является репозиторий, вокруг которого формируется проектная среда из следующих составляющих:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Репозиторий - раздел Code</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>папки с файлами для версионной коллективной работы через ветки рабочих копий</p></li>
+</ul>
+</dd>
+<dt class="field-even">Задачи - раздел Issues</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>список задач с поддержкой атрибутов: название и описание задачи, назначенные ответственные пользователи, привязанные теги, этапы и проектные процессы</p></li>
+<li><p>список тегов (Labels) для сортировки задач по ситуациям их возникновения</p></li>
+<li><p>список этапов (Milestones) для отслеживания работ и сроков по участкам проекта</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Проектные процессы - раздел Projects</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>список процессов для фиксации сопутствующих основному проекту активностей, недельных спринтов в методике Agile, процессов обслуживания клиентов</p></li>
+</ul>
+</dd>
+</dl>
 <div class="figure align-center" id="id8">
 <img alt="../../_images/github1.gif" src="../../_images/github1.gif" />
 <p class="caption"><span class="caption-text">Пример создания электронных задач на GitHub.</span><a class="headerlink" href="#id8" title="Постоянная ссылка на рисунок">¶</a></p>
 </div>
+<p>Возможность коллективного раздельного управления в разных разделах проекта создает упорядоченную среду и эффективнную замену песпорядочному почтовому сообщению.</p>
+<p>Для общения в стиле чата GitHub пердлагает инегрированный сервис Slack (<a class="reference external" href="https://slack.com">https://slack.com</a>), аналогичный чат для для собственного сервера на GitLab - Mattermost (<a class="reference external" href="https://mattermost.com">https://mattermost.com</a>). Оба чата предлагают мобильные приложения в AppStore и Google Play.</p>
 </div>
 <div class="section" id="id3">
 <h2>Создание копии через ветвление<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Главный процесс работы с документацией сотоит из создания пользователем рабочей копии в так называемой ветке (branch), внесения изменения в текст документов, фиксации изменений (commit), слияния своей ветки с основной веткой репозитория и генерации веб-сайта документации.</p>
+<p>Рабочая копия в GitHub формируется через активацию списка веток branch в разделе репозитория (название раздела Code). Список веток показывает активную ветку. При открытии списка появляется поле ввода названия ветки для поиска и одновременно создания новой ветки при отсутствии ветки с введенныи названием. В процессе ввода будет показана кнопка-подсказка, что можно добавить ветку с введенным названием. По этой кнопке будет создана и установлена активной новая ветка с рабочей копией репозитория.</p>
 <div class="figure align-center" id="id9">
 <img alt="../../_images/github2.gif" src="../../_images/github2.gif" />
 <p class="caption"><span class="caption-text">Пример создания собственной ветки, внесения и фикации изменений.</span><a class="headerlink" href="#id9" title="Постоянная ссылка на рисунок">¶</a></p>
 </div>
+<p>После внесения изменений в текстовые файлы через встроенный редактор необходимо зафиксировать изменения нажатием кнопки Commit, указав комментарий сути изменений.</p>
 </div>
 <div class="section" id="id4">
 <h2>Слияние копии с основной веткой<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h2>
@@ -262,9 +343,9 @@
 <div class="todo-plan docutils container">
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 29%" />
-<col style="width: 50%" />
-<col style="width: 21%" />
+<col style="width: 16%" />
+<col style="width: 27%" />
+<col style="width: 57%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>№</p></th>
@@ -276,16 +357,16 @@
 <tr class="row-even"><td colspan="3"><p><strong>Ответственный - Коля</strong></p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference external" href="https://github.com/andrew-bykov/sphinx/issues/1"># 1</a></p></td>
-<td><p>(20ч) ?.04.2020</p></td>
-<td><p>Задача 1</p></td>
+<td><p>(60ч) ?.04.2020</p></td>
+<td><p>Создание окружения для электронных задач</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference external" href="https://github.com/andrew-bykov/sphinx/issues/2"># 2</a></p></td>
-<td><p>(20ч) ?.04.2020</p></td>
-<td><p>Задача 2</p></td>
+<td><p>(5мин) ?.04.2020</p></td>
+<td><p>Создание ветки для изменений</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference external" href="https://github.com/andrew-bykov/sphinx/issues/3"># 3</a></p></td>
-<td><p>(20ч) ?.04.2020</p></td>
-<td><p>Задача 3</p></td>
+<td><p>(5мин) ?.04.2020</p></td>
+<td><p>Объединение изменений</p></td>
 </tr>
 </tbody>
 </table>
@@ -294,9 +375,9 @@
 <div class="todo-done docutils container">
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 29%" />
-<col style="width: 50%" />
-<col style="width: 21%" />
+<col style="width: 16%" />
+<col style="width: 27%" />
+<col style="width: 57%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>№</p></th>
@@ -308,18 +389,18 @@
 <tr class="row-even"><td colspan="3"><p><strong>Ответственный - Вася</strong></p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference external" href="https://github.com/andrew-bykov/sphinx/issues/1"># 1</a></p></td>
-<td><p>(20ч) ?.04.2020</p></td>
-<td><p>Задача 1</p></td>
+<td><p>(60ч) ?.04.2020</p></td>
+<td><p>Создание окружения для электронных задач</p></td>
 </tr>
 <tr class="row-even"><td colspan="3"><p><strong>Ответственный - Петя</strong></p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference external" href="https://github.com/andrew-bykov/sphinx/issues/2"># 2</a></p></td>
-<td><p>(20ч) ?.04.2020</p></td>
-<td><p>Задача 2</p></td>
+<td><p>(5мин) ?.04.2020</p></td>
+<td><p>Создание ветки для изменений</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference external" href="https://github.com/andrew-bykov/sphinx/issues/3"># 3</a></p></td>
-<td><p>(20ч) ?.04.2020</p></td>
-<td><p>Задача 3</p></td>
+<td><p>(5мин) ?.04.2020</p></td>
+<td><p>Объединение изменений</p></td>
 </tr>
 </tbody>
 </table>
