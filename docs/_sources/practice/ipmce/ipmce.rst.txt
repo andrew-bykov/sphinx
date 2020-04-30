@@ -42,6 +42,6 @@
 
 .. figure:: ipmce-cover.jpg
     :align: center
-    :target: ipmce-buklet.pdf
+    :target: /_static/ipmce-buklet.pdf
 
-    `Открыть журнал об институте <./ipmce-buklet.pdf>`_
+    `Открыть журнал об институте </_static/ipmce-buklet.pdf>`_
