@@ -18,7 +18,7 @@
    practice/project
    practice/blend4web/blend4web
    practice/wantenger
-   practice/ipmce
+   practice/ipmce/ipmce
    practice/protek
    practice/goldenpages
 
