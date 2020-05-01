@@ -19,7 +19,7 @@
    practice/blend4web/blend4web
    practice/wantenger
    practice/ipmce/ipmce
-   practice/protek
+   practice/protek/protek
    practice/goldenpages
 
 
