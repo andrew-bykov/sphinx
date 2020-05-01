@@ -15,7 +15,7 @@
    :hidden:
    :caption: Практика
 
-   practice/project
+   practice/project/project
    practice/blend4web/blend4web
    practice/ecommerce/ecommerce
    practice/ipmce/ipmce

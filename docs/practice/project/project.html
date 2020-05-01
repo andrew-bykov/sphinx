@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html  lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Проектное управление</title>
+    
+      <link rel="stylesheet" href="../../_static/pygments.css">
+      <link rel="stylesheet" href="../../_static/theme.css">
+      <link rel="stylesheet" href="../../_static/romnnn_sphinx_press_theme.css">
+          <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+          <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/translations.js"></script>
+
+      
+      <script src="../../_static/theme-vendors.js"></script>
+      <script src="../../_static/theme.js" defer></script>
+    
+  <link rel="index" title="Алфавитный указатель" href="../../genindex.html" />
+  <link rel="search" title="Поиск" href="../../search.html" />
+  <link rel="next" title="3D веб-приложения" href="../blend4web/blend4web.html" />
+  <link rel="prev" title="Быков Андрей Юрьевич" href="../../index.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <div class="home-link-container">
+      <router-link to="../../index.html" class="home-link">
+      
+        <img class="logo" src="../../_static/bykov.jpg" alt="logo"/>
+      
+        <span class="site-name">Быков Андрей Юрьевич</span>
+    </router-link>
+  </div>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="../../index.html#id2"
+         class="nav-link  router-link-active">
+         Практика
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../index.html#id3"
+         class="nav-link ">
+         Программные идеи
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../index.html#id4"
+         class="nav-link ">
+         Контакты
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/andrew-bykov/sphinx"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="../../index.html#id2"
+         class="nav-link  router-link-active">
+         Практика
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../index.html#id3"
+         class="nav-link ">
+         Программные идеи
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../index.html#id4"
+         class="nav-link ">
+         Контакты
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/andrew-bykov/sphinx"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Поиск</span>
+    <div class="searchformwrapper">
+      <form autocomplete="off" class="search" action="../../search.html" method="get">
+        <input type="text" name="q" autocomplete="off" />
+        <input type="submit" value="Искать" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../index.html#id2">Практика</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Проектное управление</a>
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#microsoft-project" class="reference internal">Microsoft Project</a></li>
+                
+                  <li class="toctree-l2"><a href="#spider-project" class="reference internal">Spider Project</a></li>
+                
+                  <li class="toctree-l2"><a href="#expert-project" class="reference internal">Expert Project</a></li>
+                
+                  <li class="toctree-l2"><a href="#redmine" class="reference internal">Redmine</a></li>
+                
+                  <li class="toctree-l2"><a href="#gitlab" class="reference internal">GitLab</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../blend4web/blend4web.html" class="reference internal ">3D веб-приложения</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../ecommerce/ecommerce.html" class="reference internal ">Электронная коммерция</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../ipmce/ipmce.html" class="reference internal ">Сенсорные сети</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../protek/protek.html" class="reference internal ">Платежный календарь</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../goldenpages/goldenpages.html" class="reference internal ">Справочные системы</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../index.html#id3">Программные идеи</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../ideas/sphinx/sphinx.html" class="reference internal ">Рабочая документация в Sphinx</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../ideas/office/office.html" class="reference internal ">Электронный проектный офис</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../ideas/redmine/redmine.html" class="reference internal ">Бизнес-процессы в Redmine</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../ideas/qnap/qnap.html" class="reference internal ">Офисный сервер QNAP</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../plan.html" class="reference internal ">Планирование в Sphinx</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../index.html#id4">Контакты</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../contacts.html" class="reference internal ">Способы взаимодействия</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+    
+    <li>Проектное управление</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="../../index.html"
+       title="предыдущая глава">← Быков Андрей Юрьевич</a>
+  </li>
+  <li class="next">
+    <a href="../blend4web/blend4web.html"
+       title="следующая глава">3D веб-приложения →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <div class="section" id="id1">
+<h1>Проектное управление<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h1>
+<p>Разработка программного обеспечения всегда сложный процесс. Управление таким процессом в чем-то схоже с классическим проектным подходом PMBoK (Project Management Body of Knowledge). Конечно есть специфика в неопределенном количестве итераций работ над каким либо участком программы, описанная в методиках Rational Unified Process, Agile, eXtreme programming.</p>
+<p>Из практики проектной работы мне видно боольшое разнообразие индивидуальных методик буквально в каждом проекте. Шаблоны почти никогда не работают в общем виде. Постараюсь раскрыть особенности, с которым приходилось мне встречаться.</p>
+<div class="section" id="microsoft-project">
+<h2>Microsoft Project<a class="headerlink" href="#microsoft-project" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Обычно первым инструментом на пути всех новичков попадает в руки продукт компании Microsoft. Он удобен табличным Excell стилем интерфейса, сразу видна группировка задач и легко назначать ответственных. Интеграция c Microsoft SharePoint сервером позволяет получить заодно удобное хранилище для документов и списков проекта.</p>
+<div class="section" id="id2">
+<h3>Проект «Система проектной реализации заказов»<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Заказчик: WhiteSite (2002)</p>
+<p>Проведен анализ бизнес процессов производства. Реализована система матричного проектного производства Интернет представительств на базе продукта «Microsoft Project 2000 + Microsoft SQL Server» с возможностью сетевого распределенного планирования проектов на едином пуле ресурсов. Разработаны библиотечный модуль управления мультипроектной структурой и модуль интеграции системы маркетинга продаж с системой реализации заказов.</p>
+</div>
+<div class="section" id="id3">
+<h3>Управление лабораторией беспроводных систем мониторинга<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Заказчик: Институт Точной Механики и Вычислительной Техники им. Лебедева</p>
+<p>Развернут проектный офис в интеграции с Microsoft Sharepoint Server, организовано более 30 проектов для работы с заказчиками по изготовлению стендов и опытных образцов устройств сенсорной сети на основе радиопротокола ZigBee.</p>
+</div>
+</div>
+<div class="section" id="spider-project">
+<h2>Spider Project<a class="headerlink" href="#spider-project" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Во время прохождения стажировки в российском отделении PMI в 2002 году у Либерзона Владимира Иосифовича (одного из автором PMBoK) узнал много интересного о методах проектного управления - о критическом пути в сетевых графиках работ, проектных вехах (а не групп задач), иерахиях задач, которых может быть несколько для разных проектных процессов.</p>
+<p>Самое главное - пришло понимание необходимости описывать ресурсы проекта, их характеристики в затратах и эффектах. Такие характеристики позволяют легко рассчитывать сложные параметры проекта, строительные сметы.</p>
+</div>
+<div class="section" id="expert-project">
+<h2>Expert Project<a class="headerlink" href="#expert-project" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Особенно глубоко оценка ресурсов проекта проводится в методиках бизнес планирования, например в UNIDO. Подробное моделирование инвестиционной, оперционной и финансовой деятельности позволяет определить много реперных и ораничительных параметров проекта.</p>
+<div class="section" id="id4">
+<h3>Подготовка венчурного проекта<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Заказчик: Институт Точной Механики и Вычислительной Техники им. Лебедева</p>
+<p>Одной из целей работы направления сенсорных сетей было формирование инвестиционного проекта для вывода технологии на рынок. Мною было разраоботаны несколько бизнес-планов в Project Expert для разных применений технологии. По некоторым из них были иницированы венчурные процессы.</p>
+</div>
+</div>
+<div class="section" id="redmine">
+<h2>Redmine<a class="headerlink" href="#redmine" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Некоторые проекты обладают потребностями в учете процессов, что порождает различные топологии систем управления - дивизионной, функциональной или матричной структур подчинения людей и задач. В программировании процесс сопровождения клиентов и исправления багов часто становится типичным процессом, и система Redmine отлично справляется с совмещением задач управления проектами, трекингом задач и таблицами процессов с необходимыми атрибутами.</p>
+<div class="section" id="id5">
+<h3>Управление группой проектов программной разработки<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Работа над системой электронной коммерции в компании Триумф в период 2009-2014 была связана с поиском продуктового образа и сопровождалась десятками проектов по программной разработке, веб дизайну и трехмерному моделированию.</p>
+<p>В системе Redmine удалось формализовать многие поцессы разработки, совместить их с репозиториями программного кода, построить подобие системы требований с трассировками задач и автоматизированную систему отчетности потраченного времени.</p>
+</div>
+<div class="section" id="id6">
+<h3>Управление юридическим агентством<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Попутная задача для соседнего юридического отдела выявила способности Redmine к организации юридических проектов с определением специфических метрик потраченных часов, проведенных мероприятий и оценки результативности юристов.</p>
+</div>
+</div>
+<div class="section" id="gitlab">
+<h2>GitLab<a class="headerlink" href="#gitlab" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Формальные проектные цифры все же не дают глубокой картины по проекту. На определенной стадии проекту нужно подробное описание и интегрированное взаимодействие участников.</p>
+<p>Тенденцию в программных проектах по меньшей формальности, простоте задач и возможности проще описывать ситуации с задачами задал сервис GitHub с чатом Slack. Его офисным автономным аналогом стал GitLab и чат Mattermost.</p>
+<div class="section" id="id7">
+<h3>Управление группой проектов программной разработки<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Работа над системой электронной коммерцией в компании Триумф в период 2015-2020 была связана больше с продуктовой разработкой.</p>
+</div>
+<div class="section" id="id8">
+<h3>Рабочая документация<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="../../index.html"
+       title="предыдущая глава">← Быков Андрей Юрьевич</a>
+  </li>
+  <li class="next">
+    <a href="../blend4web/blend4web.html"
+       title="следующая глава">3D веб-приложения →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2020, Быков Андрей Юрьевич.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4 with <a href="https://github.com/romnnn/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>
