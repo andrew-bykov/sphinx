@@ -17,7 +17,7 @@
 
    practice/project
    practice/blend4web/blend4web
-   practice/wantenger
+   practice/ecommerce/ecommerce
    practice/ipmce/ipmce
    practice/protek/protek
    practice/goldenpages/goldenpages
