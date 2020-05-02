@@ -57,16 +57,13 @@
 Владение технологиями и навыки
 ==============================
 
-:Моделирование бизнес процессов:
-    ERD, DFD, UML/RUP, BPMN, Rational Rose, RequisitePro, Aris, MS Visio, Draw.io
-:Проектное управление:
-    MS Project, Spider Project, PMBoK, UNIDO, RedMine/GitHub/GitLab/GIT, Scrum
-:Платформы для разработки:
-    Microsoft SharePoint, 1C, Oracle, Erlang/OTP, Blender/Blend4Web
-:Программирование:
-    HTML5/CSS3/JS/WebGl/Bootstrap/AngularJS/Polymer, PL/SQL, Erlang/Cowboy/XMPP, MVC
-:Владение иностранными языками:
-    Английский
+====================================  ====
+**Моделирование бизнес процессов**    ERD, DFD, UML/RUP, BPMN, Rational Rose, RequisitePro, Aris, MS Visio, Draw.io
+**Проектное управление**              MS Project, Spider Project, PMBoK, UNIDO, RedMine/GitHub/GitLab/GIT, Scrum
+**Платформы для разработки**          Microsoft SharePoint, 1C, Oracle, Erlang/OTP, Blender/Blend4Web
+**Программирование**                  HTML5/CSS3/JS/WebGl/Bootstrap/AngularJS/Polymer, PL/SQL, Erlang/Cowboy/XMPP, MVC
+**Владение иностранными языками**     Английский
+====================================  ====
 
 Программные идеи
 ================
