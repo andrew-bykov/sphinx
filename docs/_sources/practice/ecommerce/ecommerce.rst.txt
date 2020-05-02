@@ -18,6 +18,8 @@
     
     <center><video width="100%" controls="controls"><source src="../../_static/wantenger.mp4"></video></center>
 
+    Ссылка на YouTube https://youtu.be/K3tIpVPpFjI
+
 (MySQL, Erlang, CouchDB, RestAPI, SPA - Google Polymer / HTML native Web Components, WebGL)
 
 Веб-система регистрации рецептов
