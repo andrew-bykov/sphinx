@@ -62,7 +62,7 @@
 :Проектное управление:
     MS Project, Spider Project, PMBoK, UNIDO, RedMine/GitHub/GitLab/GIT, Scrum
 :Платформы для разработки:
-    Microsoft SharePoint, 1C, Oracle, Erlang/OTP, Blender
+    Microsoft SharePoint, 1C, Oracle, Erlang/OTP, Blender/Blend4Web
 :Программирование:
     HTML5/CSS3/JS/WebGl/Bootstrap/AngularJS/Polymer, PL/SQL, Erlang/Cowboy/XMPP, MVC
 :Владение иностранными языками:
