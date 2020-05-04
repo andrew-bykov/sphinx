@@ -126,3 +126,5 @@ Sphinx
 
 .. figure:: /_static/D.svg
     :align: center
+
+    Разработанный мною комплект элементов для методолигии Aris.
