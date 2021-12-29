@@ -15,6 +15,10 @@
 # sys.path.insert(0, os.path.abspath('.'))
 
 
+# -- Build command -----------------------------------------------------------
+
+# sphinx-build -b html . docs
+
 # -- Project information -----------------------------------------------------
 
 project = 'Быков Андрей Юрьевич'
