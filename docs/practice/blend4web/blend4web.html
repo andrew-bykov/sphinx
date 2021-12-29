@@ -2,22 +2,25 @@
 <html  lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
       <title>3D веб-приложения</title>
     
       <link rel="stylesheet" href="../../_static/pygments.css">
       <link rel="stylesheet" href="../../_static/theme.css">
       <link rel="stylesheet" href="../../_static/romnnn_sphinx_press_theme.css">
+          <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="../../_static/css/theme.css " type="text/css" />
           <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
           <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
       
       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
 
       <!-- sphinx script_files -->
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/language_data.js"></script>
         <script src="../../_static/translations.js"></script>
 
       
@@ -273,68 +276,72 @@
 <hr>
           <div class="content" role="main">
             
-  <div class="section" id="d">
+  <section id="d">
 <h1>3D веб-приложения<a class="headerlink" href="#d" title="Ссылка на этот заголовок">¶</a></h1>
 <p>В период работы 2009 - 2020 в компании ООО «Триумф» мною была сформирована команда для разработки трехмерных браузерных игр. В процессе развития команды вокруг идеи универсальной игровой WebGL сцены сформировалась группа программирования движка. Еще в двух группах велись работы по дизайну трехмерных объектов и по программированию приложения для виртуальных  торговых помещений.</p>
 <p>В результате был разработан программный продукт Blend4Web (<a class="reference external" href="https://blend4web.com">https://blend4web.com</a>) и ряд приложений для конфигурирования товаров и навигации по торговым центрам.</p>
-<div class="section" id="blend4web">
+<section id="blend4web">
 <h2>Blend4Web<a class="headerlink" href="#blend4web" title="Ссылка на этот заголовок">¶</a></h2>
 <p>Blend4Web - это программная среда для подготовки и интерактивного отображения трехмерного аудиовизуального контента в браузерах, т.е. трехмерный «движок» (жаргонизм от англ. «engine»).</p>
 <p>Платформа предназначена для создания визуализаций, презентаций, интернет-магазинов, игр и других “насыщенных” web-приложений.</p>
 <p>Фреймворк Blend4Web имеет тесную интеграцию с пакетом 3D моделирования и анимации Blender (отсюда название). Отображение контента осуществляется средствами WebGL и других браузерных технологий без использования плагинов.</p>
 <p>Технически Blend4Web представляет собой программную библиотеку, подключаемую к веб-странице, аддон (дополнение) к программе Blender, а также инструменты для отладки и оптимизации.</p>
 <p>Первый релиз движка состоялся 28 марта 2014 г. Буквально сразу же состоялась продажа космическому агентству NASA для проекта интерактивной визуализации марсохода Couriosity. Blend4Web был применен многими компаниями с мировым именем для разработки конфигураторов автомобилей, технологического оборудования, построения методического руководства для обслуживания агрегатов, и просто трехмерной демонстрации товаров на сайте.</p>
-<div class="section" id="id1">
+<section id="id1">
 <h3>Линейка продуктов Blend4Web<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h3>
-<div class="figure align-center">
+<figure class="align-center">
 <img alt="../../_images/blend4web.png" src="../../_images/blend4web.png" />
-</div>
-</div>
-<div class="section" id="id2">
+</figure>
+</section>
+<section id="id2">
 <h3>Примеры работ<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h3>
 <div class="tocdescr docutils container">
 <div class="descr docutils container">
-<div class="figure align-default">
+<figure class="align-default">
 <img alt="../../_images/b4w1.png" src="../../_images/b4w1.png" />
-</div>
+</figure>
 </div>
 <div class="descr docutils container">
-<div class="figure align-default">
+<figure class="align-default">
 <img alt="../../_images/b4w2.png" src="../../_images/b4w2.png" />
-</div>
+</figure>
 </div>
 <div class="descr docutils container">
-<div class="figure align-default">
+<figure class="align-default">
 <img alt="../../_images/b4w3.png" src="../../_images/b4w3.png" />
-</div>
+</figure>
 </div>
 <div class="descr docutils container">
-<div class="figure align-default">
+<figure class="align-default">
 <img alt="../../_images/b4w4.png" src="../../_images/b4w4.png" />
+</figure>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div class="section" id="blend4web-studio">
+</section>
+</section>
+<section id="blend4web-studio">
 <h2>Blend4Web Studio<a class="headerlink" href="#blend4web-studio" title="Ссылка на этот заголовок">¶</a></h2>
 <p>В 2017 году пришло понимание востребованности на рынке конструктора для построения конфигураторов со сменой покрытий, сценариями действий, выбором опций. Началась разработка собственного редактора на платформе GitHub Electron, позволяющего художникам самостоятельно собирать веб-приложения и сразу видеть настройки материалов на встроенном в конструктор WebGL рендере.</p>
-<div class="section" id="id3">
+<section id="id3">
 <h3>Демонстрация работы Blend4Web Studio<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h3>
-<div class="figure align-center" id="id5">
+<figure class="align-center" id="id5">
 <img alt="../../_images/studio.gif" src="../../_images/studio.gif" />
-<p class="caption"><span class="caption-text">Ссылка на YouTube <a class="reference external" href="https://youtu.be/Pfl6NgSJX_I">https://youtu.be/Pfl6NgSJX_I</a></span><a class="headerlink" href="#id5" title="Постоянная ссылка на рисунок">¶</a></p>
-</div>
-</div>
-<div class="section" id="id4">
+<figcaption>
+<p><span class="caption-text">Ссылка на YouTube <a class="reference external" href="https://youtu.be/Pfl6NgSJX_I">https://youtu.be/Pfl6NgSJX_I</a></span><a class="headerlink" href="#id5" title="Постоянная ссылка на рисунок">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id4">
 <h3>Блог разработки Blend4Web Studio<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h3>
-<div class="figure align-center" id="id6">
+<figure class="align-center" id="id6">
 <img alt="../../_images/studio-blog.png" src="../../_images/studio-blog.png" />
-<p class="caption"><span class="caption-text">Ссылка на YouTube <a class="reference external" href="https://www.youtube.com/playlist?list=PL08oEqiMpPOecj6HvbJqyOsveqDzxuvbP">https://www.youtube.com/playlist?list=PL08oEqiMpPOecj6HvbJqyOsveqDzxuvbP</a></span><a class="headerlink" href="#id6" title="Постоянная ссылка на рисунок">¶</a></p>
-</div>
-</div>
-</div>
-</div>
+<figcaption>
+<p><span class="caption-text">Ссылка на YouTube <a class="reference external" href="https://www.youtube.com/playlist?list=PL08oEqiMpPOecj6HvbJqyOsveqDzxuvbP">https://www.youtube.com/playlist?list=PL08oEqiMpPOecj6HvbJqyOsveqDzxuvbP</a></span><a class="headerlink" href="#id6" title="Постоянная ссылка на рисунок">¶</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
 
 
           </div>
@@ -351,7 +358,7 @@
 </ul><div class="footer" role="contentinfo">
       &#169; Copyright 2020, Быков Андрей Юрьевич.
     <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4 with <a href="https://github.com/romnnn/sphinx_press_theme">Press Theme</a>.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.2 with <a href="https://github.com/romnnn/sphinx_press_theme">Press Theme</a>.
 </div>
             </div>
           </div>

@@ -2,22 +2,25 @@
 <html  lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
       <title>Рабочая документация в Sphinx</title>
     
       <link rel="stylesheet" href="../../_static/pygments.css">
       <link rel="stylesheet" href="../../_static/theme.css">
       <link rel="stylesheet" href="../../_static/romnnn_sphinx_press_theme.css">
+          <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="../../_static/css/theme.css " type="text/css" />
           <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
           <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
       
       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
 
       <!-- sphinx script_files -->
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/language_data.js"></script>
         <script src="../../_static/translations.js"></script>
 
       
@@ -196,7 +199,7 @@
                 
                   <li class="toctree-l2"><a href="#id1" class="reference internal">Система документирования Sphinx</a></li>
                 
-                  <li class="toctree-l2"><a href="#restucturedtext" class="reference internal">Язык разметки reStucturedText</a></li>
+                  <li class="toctree-l2"><a href="#restructuredtext" class="reference internal">Язык разметки reStructuredText</a></li>
                 
                   <li class="toctree-l2"><a href="#id2" class="reference internal">Совместная версионная работа</a></li>
                 
@@ -279,11 +282,11 @@
 <hr>
           <div class="content" role="main">
             
-  <div class="section" id="sphinx">
+  <section id="sphinx">
 <h1>Рабочая документация в Sphinx<a class="headerlink" href="#sphinx" title="Ссылка на этот заголовок">¶</a></h1>
 <p>Существует несколько подходов к организации процесса программирования. Во всех подходах происходит попытка определения цели программного продукта. Посмотрим на выбор целей детально:</p>
 <dl class="field-list">
-<dt class="field-odd">Техническое задание</dt>
+<dt class="field-odd">Техническое задание<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Классический «водопадный» подход. Сначала описывается объект автоматизации, его составляющие и функции. Также описываются требования, способы реализации и процедуры проверки. Подробнее можно посмотреть в ГОСТ-34 или западных аналогах, например RUP - Rational Unified Process (документ Use Case).</p>
 <dl class="simple">
 <dt><strong>Плюсы</strong></dt><dd><ul class="simple">
@@ -298,7 +301,7 @@
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Ориентированная на тесты разработка</dt>
+<dt class="field-even">Ориентированная на тесты разработка<span class="colon">:</span></dt>
 <dd class="field-even"><p>Сложность современных программ подтолкнула общество программистов к формированию в первую очередь тестовых сценариев, которые должны были по идее формально описать действия пользователей и одновременно получить критерий работоспособности программы по таким сценариям.</p>
 <dl class="simple">
 <dt><strong>Плюсы</strong></dt><dd><ul class="simple">
@@ -312,7 +315,7 @@
 </dd>
 </dl>
 </dd>
-<dt class="field-odd">Ориентированная на интерфейсы разработка</dt>
+<dt class="field-odd">Ориентированная на интерфейсы разработка<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Стремление включить пользователей в процесс разработки привело к появлению подхода прототипирования пользовательских интерфейсов. Графические изображения стали рисовать в разнообразных редакторах и пользователям предлагалось визуально оценить разрабатываемую программу.</p>
 <dl class="simple">
 <dt><strong>Плюсы</strong></dt><dd><ul class="simple">
@@ -326,19 +329,19 @@
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Экстремальное программирование</dt>
+<dt class="field-even">Экстремальное программирование<span class="colon">:</span></dt>
 <dd class="field-even"><p>Разновидность подхода, ориентированного на интерфейсы. Вместо графических редакторов программисты используют программные редакторы графических форм ввода-вывода информации, а дизайнеры потом «доукрашивают» эти формы. Решается один из минусов по проектрованию на уровне дизайнеров.</p>
 </dd>
-<dt class="field-odd">Вывод</dt>
+<dt class="field-odd">Вывод<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Если попробовать сложить все перечисленные подходы и вспомнить что любой программный продукт завершается пользовательской документацией, то можно предположить существование еще одного подхода - «ориентированная на документацию разработка».</p>
 <p>Подразумевается наличие программного инструмента управления документацией, доступного для понимания как полльзователям, так и дизайнерам с программистами.</p>
 </dd>
 </dl>
-<div class="section" id="id1">
+<section id="id1">
 <h2>Система документирования Sphinx<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h2>
 <p>Наиболее распространенной системой для ведения документации сегодня является Sphinx (<a class="reference external" href="https://www.sphinx-doc.org">https://www.sphinx-doc.org</a>) - программная разработка с открытым исходным кодом, написана на Python.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Отличительные особенности программы</dt>
+<dt class="field-odd">Отличительные особенности программы<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>формирование комплекта автономных веб-страниц с поддержкой поиска и тем оформления</p></li>
 <li><p>возможность размещения в качестве сайта на любом файловом хостинге без использования сервера баз данных и сервера веб-приложений (GitHub, BitBucket, GitLab)</p></li>
@@ -350,7 +353,7 @@
 <li><p>кроссплатформенная работа на разных операционных системах (Windows, Linux, MacOS)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Плюсы для программной разработки</dt>
+<dt class="field-even">Плюсы для программной разработки<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>документация имеет сквозную структуру из нескольких файлов, что позволяет формировать логически связанную подшивку документов с более легкой навигацией и поиском по сравнению с офисными документами, сложенными в случайные папки</p></li>
 <li><p>документацию легко «наращивать» с простого технического задания иллюстрациями прототипированных пользовательских форм, описанем алгоритмов работы и спецификациями программных модулей</p></li>
@@ -361,29 +364,35 @@
 </ul>
 </dd>
 </dl>
-</div>
-<div class="section" id="restucturedtext">
-<h2>Язык разметки reStucturedText<a class="headerlink" href="#restucturedtext" title="Ссылка на этот заголовок">¶</a></h2>
+</section>
+<section id="restructuredtext">
+<h2>Язык разметки reStructuredText<a class="headerlink" href="#restructuredtext" title="Ссылка на этот заголовок">¶</a></h2>
 <p>В тектовом редаторе с помощью простых правил разметки заголовков, стилей, таблиц и директив для изображений можно быстро создавать разделы документации и формировать на их основе веб-страницы с готовой структурой навигации.</p>
-<div class="figure align-center" id="id6">
+<figure class="align-center" id="id6">
 <img alt="../../_images/ideas.gif" src="../../_images/ideas.gif" />
-<p class="caption"><span class="caption-text">Пример создания веб-страницы с помощью Sphinx.</span><a class="headerlink" href="#id6" title="Постоянная ссылка на рисунок">¶</a></p>
-</div>
-</div>
-<div class="section" id="id2">
+<figcaption>
+<p><span class="caption-text">Пример создания веб-страницы с помощью Sphinx.</span><a class="headerlink" href="#id6" title="Постоянная ссылка на рисунок">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id2">
 <h2>Совместная версионная работа<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
 <p>Текстовый формат документации Sphinx позволяет широко использовать версионные подходы для коллективной работы. Приведем пример, в котором документация размещена на сервере с системой Git (это может быть интернет сервер GitHub или сервер в локальной сети GitLab). Два пользователя организовали свои связанные с сервером рабочие копии. Каждый внес изменение, но пользователь с более поздним изменением может увидеть конфликтующие места и поправить текст документации.</p>
-<div class="figure align-center" id="id7">
+<figure class="align-center" id="id7">
 <img alt="../../_images/git1.gif" src="../../_images/git1.gif" />
-<p class="caption"><span class="caption-text">Пример коллективной работы с документацией Sphinx.</span><a class="headerlink" href="#id7" title="Постоянная ссылка на рисунок">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Пример коллективной работы с документацией Sphinx.</span><a class="headerlink" href="#id7" title="Постоянная ссылка на рисунок">¶</a></p>
+</figcaption>
+</figure>
 <p>После всех исправлений второй пользователь сформировал веб-сайт документации и выложил его на сервер Git.</p>
-<div class="figure align-center" id="id8">
+<figure class="align-center" id="id8">
 <img alt="../../_images/git2.gif" src="../../_images/git2.gif" />
-<p class="caption"><span class="caption-text">Сборка веб-сайта документации Sphinx.</span><a class="headerlink" href="#id8" title="Постоянная ссылка на рисунок">¶</a></p>
-</div>
-</div>
-<div class="section" id="id3">
+<figcaption>
+<p><span class="caption-text">Сборка веб-сайта документации Sphinx.</span><a class="headerlink" href="#id8" title="Постоянная ссылка на рисунок">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id3">
 <h2>Включение в документацию планов<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
 <p>Благодаря директивам <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">todo::</span></code> и <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">todolist::</span></code> можно включать в документацию специальные блоки, похожие по стилю на блоки сообщений и предупреждений. Можно также добавлять внутрь плановых блоков конструкции <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">container::</span> <span class="pre">&lt;style-class&gt;</span></code>, где в поле &lt;style-class&gt; можно указать CSS класс в файле custom.css.</p>
 <p>Подробнее о работе плановых блоков и сборку планов можно прочитать в разделе <a class="reference internal" href="../../plan.html"><span class="doc">Планирование в Sphinx</span></a></p>
@@ -392,11 +401,6 @@
 <p><strong>Раздел - Рабочая документация в Sphinx - Критично (класс todo-danger)</strong></p>
 <div class="todo-danger docutils container">
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 21%" />
-<col style="width: 56%" />
-<col style="width: 24%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>№</p></th>
 <th class="head"><p>Дата</p></th>
@@ -419,11 +423,6 @@
 <p><strong>Раздел - Рабочая документация в Sphinx - В ожидании (класс todo-warning)</strong></p>
 <div class="todo-warning docutils container">
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 21%" />
-<col style="width: 56%" />
-<col style="width: 24%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>№</p></th>
 <th class="head"><p>Дата</p></th>
@@ -446,11 +445,6 @@
 <p><strong>Раздел - Рабочая документация в Sphinx - Намечено (класс todo-tip)</strong></p>
 <div class="todo-tip docutils container">
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 21%" />
-<col style="width: 56%" />
-<col style="width: 24%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>№</p></th>
 <th class="head"><p>Дата</p></th>
@@ -470,15 +464,15 @@
 </tbody>
 </table>
 </div>
-</div>
-</div>
-<div class="section" id="id5">
+</aside>
+</section>
+<section id="id5">
 <h2>Организация разработки<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h2>
 <p>Документация как процесс формализации удобно использовать на всех этапах разработки - при фиксации требований и технического задания, при разработке прототипа пользовательских интерфейсов с попутным формированием иерархии документов и описанием алгоримов работы программы.</p>
 <p>В процессе ориентированной на документацию разработки все участники команды на разных этапах смогут видеть полную картину разрабатываемого продукта.</p>
 <p>Ну и, конечно, при заверешении разработки сразу появится полная документация для всех групп пользователей.</p>
-</div>
-</div>
+</section>
+</section>
 
 
           </div>
@@ -495,7 +489,7 @@
 </ul><div class="footer" role="contentinfo">
       &#169; Copyright 2020, Быков Андрей Юрьевич.
     <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4 with <a href="https://github.com/romnnn/sphinx_press_theme">Press Theme</a>.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.2 with <a href="https://github.com/romnnn/sphinx_press_theme">Press Theme</a>.
 </div>
             </div>
           </div>

@@ -2,22 +2,25 @@
 <html  lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
       <title>Планирование в Sphinx</title>
     
       <link rel="stylesheet" href="_static/pygments.css">
       <link rel="stylesheet" href="_static/theme.css">
       <link rel="stylesheet" href="_static/romnnn_sphinx_press_theme.css">
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/css/theme.css " type="text/css" />
           <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
           <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
       
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
 
       <!-- sphinx script_files -->
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
         <script src="_static/translations.js"></script>
 
       
@@ -273,11 +276,11 @@
 <hr>
           <div class="content" role="main">
             
-  <div class="section" id="sphinx">
+  <section id="sphinx">
 <h1>Планирование в Sphinx<a class="headerlink" href="#sphinx" title="Ссылка на этот заголовок">¶</a></h1>
 <p>Демонстрация использования системы документирования Sphinx-Doc для коллективной работы над плановыми документами.</p>
 <p>Подробнее можно узнать по ссылке <a class="reference internal" href="ideas/sphinx/sphinx.html"><span class="doc">Рабочая документация в Sphinx</span></a>.</p>
-<div class="section" id="id1">
+<section id="id1">
 <h2>Директивы для задач<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h2>
 <p>С помощью расширения <code class="docutils literal notranslate"><span class="pre">sphinx.ext.todo</span></code> и директивы <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">todo::</span></code> в стиле информационных блоков <code class="docutils literal notranslate"><span class="pre">Notes</span></code> можно обозначать описание задач в любых разделах документации.</p>
 <p>Все описания задач можно объединить в динамически формируемый список задач, используя директиву <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">todolist::</span></code>.</p>
@@ -290,19 +293,14 @@
 <span class="n">todo_link_only</span> <span class="o">=</span> <span class="kc">True</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id2">
+</section>
+<section id="id2">
 <h2>Список моих задач<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
 <div class="admonition-todo admonition">
 <p class="admonition-title">План</p>
 <p><strong>Раздел - Электронный проектный офис - Запланировано</strong></p>
 <div class="todo-plan docutils container">
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 16%" />
-<col style="width: 27%" />
-<col style="width: 57%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>№</p></th>
 <th class="head"><p>Дата</p></th>
@@ -330,11 +328,6 @@
 <p><strong>Раздел - Электронный проектный офис - Сделано</strong></p>
 <div class="todo-done docutils container">
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 16%" />
-<col style="width: 27%" />
-<col style="width: 57%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>№</p></th>
 <th class="head"><p>Дата</p></th>
@@ -361,18 +354,13 @@
 </tbody>
 </table>
 </div>
-</div>
+</aside>
 <p class="todo-source"><a class="reference internal" href="ideas/office/office.html#id6"><em>исходный элемент</em></a></p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">План</p>
 <p><strong>Раздел - Рабочая документация в Sphinx - Критично (класс todo-danger)</strong></p>
 <div class="todo-danger docutils container">
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 21%" />
-<col style="width: 56%" />
-<col style="width: 24%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>№</p></th>
 <th class="head"><p>Дата</p></th>
@@ -395,11 +383,6 @@
 <p><strong>Раздел - Рабочая документация в Sphinx - В ожидании (класс todo-warning)</strong></p>
 <div class="todo-warning docutils container">
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 21%" />
-<col style="width: 56%" />
-<col style="width: 24%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>№</p></th>
 <th class="head"><p>Дата</p></th>
@@ -422,11 +405,6 @@
 <p><strong>Раздел - Рабочая документация в Sphinx - Намечено (класс todo-tip)</strong></p>
 <div class="todo-tip docutils container">
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 21%" />
-<col style="width: 56%" />
-<col style="width: 24%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>№</p></th>
 <th class="head"><p>Дата</p></th>
@@ -446,15 +424,15 @@
 </tbody>
 </table>
 </div>
-</div>
+</aside>
 <p class="todo-source"><a class="reference internal" href="ideas/sphinx/sphinx.html#id4"><em>исходный элемент</em></a></p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">План</p>
 <p>Новая большая задача</p>
-</div>
+</aside>
 <p class="todo-source"><a class="reference internal" href="index.html#id6"><em>исходный элемент</em></a></p>
-</div>
-</div>
+</section>
+</section>
 
 
           </div>
@@ -471,7 +449,7 @@
 </ul><div class="footer" role="contentinfo">
       &#169; Copyright 2020, Быков Андрей Юрьевич.
     <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4 with <a href="https://github.com/romnnn/sphinx_press_theme">Press Theme</a>.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.2 with <a href="https://github.com/romnnn/sphinx_press_theme">Press Theme</a>.
 </div>
             </div>
           </div>

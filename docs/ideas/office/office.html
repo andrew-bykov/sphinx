@@ -2,22 +2,25 @@
 <html  lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
       <title>Электронный проектный офис</title>
     
       <link rel="stylesheet" href="../../_static/pygments.css">
       <link rel="stylesheet" href="../../_static/theme.css">
       <link rel="stylesheet" href="../../_static/romnnn_sphinx_press_theme.css">
+          <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="../../_static/css/theme.css " type="text/css" />
           <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
           <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
       
       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
 
       <!-- sphinx script_files -->
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/language_data.js"></script>
         <script src="../../_static/translations.js"></script>
 
       
@@ -281,60 +284,64 @@
 <hr>
           <div class="content" role="main">
             
-  <div class="section" id="id1">
+  <section id="id1">
 <h1>Электронный проектный офис<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h1>
 <p>Как в среде программной разработки, так и в бизнесе к проектам сегодня сложилось неоднозначное отношение. С одной стороны все понимают, что любую деятельность надо планировать. И для планирования наработаны подходы сетевых графиков работ, схем бизнес-процессов и целых бизнес-планов с финансово-инвестиционными параметрами.</p>
 <p>Но, «отплывая от берега», часто оказывается ситуация, которую хорошо описали в пословице «гладко было на бумаге, да забыли про овраги». Среди кучи проектных документов тяжело бывает найти нужную директиву, особенно если ее там нет, и появилась потребность в ней уже в процессе работы.</p>
 <p>Программисты научились бороться с недостаточностью постановочной информации с помощью трекинговых систем для ослеживания задач. Через обратную связь в электронных задачах программисты «сигналят» о проблемах. Но и там больше чем на недельный спринт видения картины движения по проекту нет.</p>
 <p>Сочетание подхода трекинговых систем и электронной документации может дать интересный результат. В начале проекта в документацию можно разместить исходные данные - технические задания, проектные документы, предполагаемые графики работ. А вот уже графики работ можно связать с электронными задачами, в которых уже будет происходить взаимодействие участников проекта с попутным дополнением документации в части постановки задач, хода выполнения графиков работ.</p>
-<div class="section" id="github">
+<section id="github">
 <h2>GitHub сервер<a class="headerlink" href="#github" title="Ссылка на этот заголовок">¶</a></h2>
 <p>Для ведения документации идеальным форматом является текстовый файл с разметкой заголовков, стилей, таблиц, сносок, ссылок. Популярной системой документирования с поддержкой размеченного текста сегодня является Sphinx (подробнее можно посмотреть в разделе <a class="reference internal" href="../sphinx/sphinx.html"><span class="doc">Рабочая документация в Sphinx</span></a>). Sphinx позволяет создавать автономный веб-сайт документации с автоматически сформированной навигацией и поиском без каких-либо серверов.</p>
 <p>Версионную коллективную работу с документами текстовых форматов удобно вести в Git серверах, как на собственном сервере через GitLab, так и на интернет хостинге GitHub или BitBucket. Разберем сервер GitHub (<a class="reference external" href="https://github.com">https://github.com</a>). Git позволяет всем участникам проекта в автоматизированном режиме делать версионные копии документации, вносить изменения и объединять их с изменениями других участников, сохраняя всю историю изменений. На GitHub можно бесплатно размещать проекты с открытым кодом, или выбрать тариф для ведения закрытых проектов с ограниченным доступом.</p>
-</div>
-<div class="section" id="id2">
+</section>
+<section id="id2">
 <h2>Проекты и электронные задачи<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
 <p>Основным проектом в GitHub является репозиторий, вокруг которого формируется проектная среда из следующих составляющих:</p>
 <dl class="field-list simple">
-<dt class="field-odd">Репозиторий - раздел Code</dt>
+<dt class="field-odd">Репозиторий - раздел Code<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>папки с файлами для версионной коллективной работы через ветки рабочих копий</p></li>
 </ul>
 </dd>
-<dt class="field-even">Задачи - раздел Issues</dt>
+<dt class="field-even">Задачи - раздел Issues<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>список задач с поддержкой атрибутов: название и описание задачи, назначенные ответственные пользователи, привязанные теги, этапы и проектные процессы</p></li>
 <li><p>список тегов (Labels) для сортировки задач по ситуациям их возникновения</p></li>
 <li><p>список этапов (Milestones) для отслеживания работ и сроков по участкам проекта</p></li>
 </ul>
 </dd>
-<dt class="field-odd">Проектные процессы - раздел Projects</dt>
+<dt class="field-odd">Проектные процессы - раздел Projects<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>список процессов для фиксации сопутствующих основному проекту активностей, недельных спринтов в методике Agile, процессов обслуживания клиентов</p></li>
 </ul>
 </dd>
 </dl>
-<div class="figure align-center" id="id8">
+<figure class="align-center" id="id8">
 <img alt="../../_images/github1.gif" src="../../_images/github1.gif" />
-<p class="caption"><span class="caption-text">Пример создания электронных задач на GitHub.</span><a class="headerlink" href="#id8" title="Постоянная ссылка на рисунок">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Пример создания электронных задач на GitHub.</span><a class="headerlink" href="#id8" title="Постоянная ссылка на рисунок">¶</a></p>
+</figcaption>
+</figure>
 <p>Возможность коллективного раздельного управления в разных разделах проекта создает упорядоченную среду и эффективнную замену беспорядочному почтовому сообщению.</p>
 <p>Для общения в стиле чата GitHub предлагает интегрированный сервис Slack (<a class="reference external" href="https://slack.com">https://slack.com</a>), аналогичный чат для собственного сервера на GitLab - Mattermost (<a class="reference external" href="https://mattermost.com">https://mattermost.com</a>). Оба чата предлагают мобильные приложения в AppStore и Google Play.</p>
-</div>
-<div class="section" id="id3">
+</section>
+<section id="id3">
 <h2>Создание копии через ветвление<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
 <p>Главный процесс работы с документацией сотоит из создания пользователем рабочей копии в так называемой ветке (branch), внесения изменения в текст документов, фиксации изменений (commit), слияния своей ветки с основной веткой репозитория и генерации веб-сайта документации.</p>
 <p>Рабочая копия в GitHub формируется через активацию списка веток branch в разделе репозитория (название раздела Code). Список веток показывает активную ветку. При открытии списка появляется поле ввода названия ветки для поиска и одновременно создания новой ветки при отсутствии ветки с введенныи названием. В процессе ввода будет показана кнопка-подсказка, что можно добавить ветку с введенным названием. По этой кнопке будет создана и установлена активной новая ветка с рабочей копией репозитория.</p>
-<div class="figure align-center" id="id9">
+<figure class="align-center" id="id9">
 <img alt="../../_images/github2.gif" src="../../_images/github2.gif" />
-<p class="caption"><span class="caption-text">Пример создания собственной ветки, внесения и фикации изменений.</span><a class="headerlink" href="#id9" title="Постоянная ссылка на рисунок">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Пример создания собственной ветки, внесения и фикации изменений.</span><a class="headerlink" href="#id9" title="Постоянная ссылка на рисунок">¶</a></p>
+</figcaption>
+</figure>
 <p>После внесения изменений в текстовые файлы через встроенный редактор необходимо зафиксировать изменения нажатием кнопки Commit, указав комментарий сути изменений.</p>
-</div>
-<div class="section" id="id4">
+</section>
+<section id="id4">
 <h2>Слияние копии с основной веткой<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h2>
-</div>
-<div class="section" id="id5">
+</section>
+<section id="id5">
 <h2>Ссылки на электронные задачи<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h2>
 <p>Чтобы добавить возможность указывать короткие ссылки на внешние адреса с номером задачи, нужно в файл <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> добавить директиву <code class="docutils literal notranslate"><span class="pre">extlinks</span> <span class="pre">=</span> <span class="pre">{'gh':</span> <span class="pre">('https://github.com/andrew-bykov/sphinx/issues/%s','#</span> <span class="pre">')}</span></code>. Тогда с помощью разметки <code class="docutils literal notranslate"><span class="pre">:gh:`1`</span></code> можно сгенерировать на сайте документации ссылку <code class="docutils literal notranslate"><span class="pre">https://github.com/andrew-bykov/sphinx/issues/1</span></code>.</p>
 <div class="admonition-todo admonition" id="id6">
@@ -342,11 +349,6 @@
 <p><strong>Раздел - Электронный проектный офис - Запланировано</strong></p>
 <div class="todo-plan docutils container">
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 16%" />
-<col style="width: 27%" />
-<col style="width: 57%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>№</p></th>
 <th class="head"><p>Дата</p></th>
@@ -374,11 +376,6 @@
 <p><strong>Раздел - Электронный проектный офис - Сделано</strong></p>
 <div class="todo-done docutils container">
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 16%" />
-<col style="width: 27%" />
-<col style="width: 57%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>№</p></th>
 <th class="head"><p>Дата</p></th>
@@ -405,15 +402,15 @@
 </tbody>
 </table>
 </div>
-</div>
+</aside>
 <p>Подробнее о формате плановых блоков можно посмореть в разделе <a class="reference internal" href="../../plan.html"><span class="doc">Планирование в Sphinx</span></a>.</p>
-</div>
-<div class="section" id="id7">
+</section>
+<section id="id7">
 <h2>Организация офиса<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">¶</a></h2>
 <p>В созданный на GitHub электронный офис с автоматизированной генерацией сайта документации Sphinx можно добавлять проектные документы как в начальной стадии проекта, так и в процессе ведения работ.</p>
 <p>Благодаря постоянной работе с документацией в проекте будет всегда собранная картина планов и результатов. Интеграция документации и задач в GitHub позволяет соединить плановую работу с электронной средой задач.</p>
-</div>
-</div>
+</section>
+</section>
 
 
           </div>
@@ -430,7 +427,7 @@
 </ul><div class="footer" role="contentinfo">
       &#169; Copyright 2020, Быков Андрей Юрьевич.
     <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4 with <a href="https://github.com/romnnn/sphinx_press_theme">Press Theme</a>.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.2 with <a href="https://github.com/romnnn/sphinx_press_theme">Press Theme</a>.
 </div>
             </div>
           </div>
